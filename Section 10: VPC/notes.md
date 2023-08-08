@@ -102,3 +102,19 @@
 - **VPC Flow Logs**: network traffic logs
 - **Site to Site VPN**: VPN over PUBLIC internet between on-premises DC and AWS
 - **Direct Connect**: direct PRIVATE connection to AWS
+
+## 3 Tier Solution Architecture (Exam)
+
+- **Route53/ELB** on PUBLIC SUBNET
+- **EC2 instances** on PRIVATE SUBNET
+- **DBs/Cache** on PRIVATE SUBNET (Data Subnet)
+
+## LAMP Stack on EC2 (Exam)
+
+- **Linux**: OS for EC2 instances
+- **Apache**: Web Server that runs on Linux (EC2)
+- **MySQL**: database on RDS
+- **PHP**: Application logic (running on EC2)
+
+- Can add Redis/Memcached (ElastiCache) to include a caching tech
+- To store local application data & software: EBS drive (root)

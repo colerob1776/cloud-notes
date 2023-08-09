@@ -106,7 +106,7 @@
 ## 3 Tier Solution Architecture (Exam)
 
 - **Route53/ELB** on PUBLIC SUBNET
-- **EC2 instances** on PRIVATE SUBNET
+- **EC2 instances** on PRIVATE SUBNET (Application Subnet)
 - **DBs/Cache** on PRIVATE SUBNET (Data Subnet)
 
 ## LAMP Stack on EC2 (Exam)
@@ -118,3 +118,8 @@
 
 - Can add Redis/Memcached (ElastiCache) to include a caching tech
 - To store local application data & software: EBS drive (root)
+
+## Wordpress on AWS
+
+- ELB to load balance between EC2 instances in different AZs
+- EFS to share files across EC2 instances
